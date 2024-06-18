@@ -56,6 +56,7 @@ class Saucedemo:
                 self.login_status = True
                 return True
             else:
+                print("Invalid Login")
                 return False
         else:
             print("Error: Unable to Login to the webpage")
@@ -127,8 +128,8 @@ if __name__ == '__main__':
     # mayo=Saucedemo(url,'locked_out_user','secret_sauce')
     # mayo.start_automation()
     # mayo.webpage_login()
-    # mayo.fetch_webpage_title()
-    # mayo.fetch_weburl()
+    # print(mayo.fetch_webpage_title())
+    # print(mayo.fetch_weburl())
     # mayo.fetch_details()
     # mayo.webpage_logout()
     # mayo.shutdown_automation()
